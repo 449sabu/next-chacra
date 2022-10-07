@@ -45,6 +45,9 @@ const Navber: NextPage = () => {
           <li>
             <Link href="/blog">BLOG</Link>
           </li>
+          <li>
+            <Link href="/test">TEST</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">

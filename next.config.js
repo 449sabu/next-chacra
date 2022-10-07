@@ -8,6 +8,9 @@ const nextConfig = {
     };
     return config;
   },
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
 }
 
 module.exports = nextConfig
