@@ -10,6 +10,7 @@
     "format": "next lint --fix --dir src"
   },
   "dependencies": {
+    "@martifylabs/mesh": "^1.1.0",
     "daisyui": "^2.31.0",
     "microcms-js-sdk": "^2.2.1",
     "next": "12.3.1",
