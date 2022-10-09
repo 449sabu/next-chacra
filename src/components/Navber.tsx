@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
+import Modal from './Modal'
 
 const Navber: NextPage = () => {
   return (
@@ -54,7 +55,7 @@ const Navber: NextPage = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Connect</a>
+        <Modal />
       </div>
     </div>
   )
