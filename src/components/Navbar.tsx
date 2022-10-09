@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import Link from 'next/link'
 import Modal from './Modal'
 
-const Navber: NextPage = () => {
+const Navbar: NextPage = () => {
   return (
     <div className="navbar bg-base-200">
       <div className="navbar-start">
@@ -61,4 +61,4 @@ const Navber: NextPage = () => {
   )
 }
 
-export default Navber
+export default Navbar

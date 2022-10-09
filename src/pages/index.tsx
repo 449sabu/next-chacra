@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Hero from '../components/Hero'
-import Footer from 'components/Hooter'
 
 const Home: NextPage = () => {
-  const MainText = 'CIEL Stale Pool'
+  const MainText = 'CIEL Stake Pool'
   const SubText = 'ARMベースで構築された環境にやさしい Staking Pool です。'
   const ButtonLink = 'Wellcome'
 
@@ -16,7 +15,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero MainText={MainText} SubText={SubText} ButtonLink={ButtonLink} />
-      <Footer />
     </>
   )
 }

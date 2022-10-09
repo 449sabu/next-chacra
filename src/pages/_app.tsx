@@ -1,16 +1,19 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { WalletProvider } from '../contexts/wallet'
-import Navber from 'components/Navber'
+import Footer from 'components/Footer'
+import Navbar from 'components/Navbar'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <WalletProvider>
+    <>
       <header>
-        <Navber />
+        <Navbar />
       </header>
       <Component {...pageProps} />
-    </WalletProvider>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 
