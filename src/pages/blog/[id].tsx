@@ -9,9 +9,10 @@ type Props = {
 }
 
 export default function BlogId({ blog }: Props) {
+  console.log(blog)
   return (
-    <div className="bg-gray-50">
-      <div className="px-10 py-6 mx-auto">
+    <div className="bg-gray-200">
+      <div className="lg:px-10 lg:py-6 mx-auto">
         <div className="max-w-6xl px-10 py-6 mx-auto bg-gray-50">
           <Image
             className="object-cover w-full shadow-sm h-full"
@@ -33,9 +34,11 @@ export default function BlogId({ blog }: Props) {
             </div>
           )} */}
           <div className="mt-2">
-            <div className="text-2xl text-gray-700 mt-4 rounded ">
-              {blog.body}
-            </div>
+            <div
+              // className="text-1 text-gray-700 mt-4 rounded"
+              className="post"
+              dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
+            />
           </div>
         </div>
       </div>

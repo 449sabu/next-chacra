@@ -7,3 +7,28 @@ html {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/* ブログ詳細ページのカスタムCSS */
+/* CSSセレクタ書き方 https://saruwakakun.com/html-css/reference/selector */
+
+.post h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+
+}
+
+.post p{
+  color: chartreuse;
+  font-size: 1rem;
+}
+
+.post pre {
+  background-color: darkgrey;
+
+}
+
+.post code {
+  display: block;
+  background-color: darkgrey;
+  font-size: 1rem;
+  min-width: 2rem;
+}
