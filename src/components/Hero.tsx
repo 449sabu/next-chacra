@@ -1,9 +1,9 @@
-import PoolStats from './PoolStats'
+import PoolStats from './PoolStats';
 
 interface HeroProps {
-  MainText: string
-  SubText: string
-  ButtonLink: string
+  MainText: string;
+  SubText: string;
+  ButtonLink: string;
 }
 
 const Hero = (props: HeroProps) => {
@@ -20,7 +20,7 @@ const Hero = (props: HeroProps) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

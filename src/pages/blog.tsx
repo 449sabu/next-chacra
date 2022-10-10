@@ -1,29 +1,29 @@
 //https://zenn.dev/elletech/articles/nextjs_microcms
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { client } from 'libs/client'
-import type { Blog, Tag } from 'types/blog'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { client } from 'libs/client';
+import type { Blog, Tag } from 'types/blog';
 
 export const getStaticProps = async () => {
   const blog = await client.get({
     endpoint: 'blog',
-  })
+  });
   const tag = await client.get({
     endpoint: 'tag',
-  })
+  });
   return {
     props: {
       blogs: blog.contents,
       tags: tag.contents,
     },
-  }
-}
+  };
+};
 
 type Props = {
-  blogs: Array<Blog>
-  tags: Array<Tag>
-}
+  blogs: Array<Blog>;
+  tags: Array<Tag>;
+};
 
 export default function Test({ blogs }: Props) {
   return (
@@ -74,5 +74,5 @@ export default function Test({ blogs }: Props) {
         </div>
       </div>
     </>
-  )
+  );
 }

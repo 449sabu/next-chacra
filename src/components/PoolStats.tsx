@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import { NextPage } from 'next';
 
 const PoolStats: NextPage = () => {
   return (
@@ -44,7 +44,7 @@ const PoolStats: NextPage = () => {
         <div className="stat-desc">Lifetime ROA(0%)</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PoolStats
+export default PoolStats;

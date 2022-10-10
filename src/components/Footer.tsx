@@ -1,5 +1,5 @@
-import { NextPage } from 'next'
-import Link from 'next/link'
+import { NextPage } from 'next';
+import Link from 'next/link';
 
 const Footer: NextPage = () => {
   return (
@@ -46,7 +46,7 @@ const Footer: NextPage = () => {
         </Link>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

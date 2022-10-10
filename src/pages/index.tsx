@@ -1,11 +1,11 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Hero from '../components/Hero'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
-  const MainText = 'CIEL Stake Pool'
-  const SubText = 'ARMベースで構築された環境にやさしい Staking Pool です。'
-  const ButtonLink = 'Wellcome'
+  const MainText = 'CIEL Stake Pool';
+  const SubText = 'ARMベースで構築された環境にやさしい Staking Pool です。';
+  const ButtonLink = 'Wellcome';
 
   return (
     <>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <Hero MainText={MainText} SubText={SubText} ButtonLink={ButtonLink} />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

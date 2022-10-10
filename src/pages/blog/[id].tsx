@@ -1,15 +1,15 @@
-import { GetServerSideProps } from 'next'
-import Image from 'next/image'
-import { client } from 'libs/client'
-import type { Blog } from 'types/blog'
+import { GetServerSideProps } from 'next';
+import Image from 'next/image';
+import { client } from 'libs/client';
+import type { Blog } from 'types/blog';
 
 // Props（blog）の型
 type Props = {
-  blog: Blog
-}
+  blog: Blog;
+};
 
 export default function BlogId({ blog }: Props) {
-  console.log(blog)
+  console.log(blog);
   return (
     <div className="bg-gray-200">
       <div className="lg:px-10 lg:py-6 mx-auto">
@@ -35,31 +35,30 @@ export default function BlogId({ blog }: Props) {
           )} */}
           <div className="mt-2">
             <div
-              // className="text-1 text-gray-700 mt-4 rounded"
-              className="post"
+              className="prose"
               dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
             />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const id = context.params?.id
-  const idExceptArray = id instanceof Array ? id[0] : id
+  const id = context.params?.id;
+  const idExceptArray = id instanceof Array ? id[0] : id;
   const data = await client.get({
     endpoint: 'blog',
     contentId: idExceptArray,
-  })
+  });
 
   return {
     props: {
       blog: data,
     },
-  }
-}
+  };
+};
 
 // APIリクエストを行うパスを指定
 // export const getStaticPaths: GetStaticPaths = async () => {

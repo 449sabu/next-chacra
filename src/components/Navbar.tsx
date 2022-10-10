@@ -1,6 +1,6 @@
-import { NextPage } from 'next'
-import Link from 'next/link'
-import Modal from './Modal'
+import { NextPage } from 'next';
+import Link from 'next/link';
+import Modal from './Modal';
 
 const Navbar: NextPage = () => {
   return (
@@ -58,7 +58,7 @@ const Navbar: NextPage = () => {
         <Modal />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
