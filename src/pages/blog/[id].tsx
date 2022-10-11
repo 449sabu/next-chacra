@@ -18,10 +18,10 @@ export default function BlogId({ blog }: Props) {
             className="object-cover w-full shadow-sm h-full"
             src={blog.image.url}
             alt="Sunset in the mountains"
-            width="700"
-            height="500"
+            width="640"
+            height="431"
           />
-          <div className="mt-2">
+          <div className="mt-4">
             <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-blue-500">
               {blog.title}
             </div>
@@ -33,12 +33,10 @@ export default function BlogId({ blog }: Props) {
               </div>
             </div>
           )} */}
-          <div className="mt-2">
             <div
-              className="prose"
+              className="prose sm:prose lg:prose-lg xl:prose-xl"
               dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
             />
-          </div>
         </div>
       </div>
     </div>
